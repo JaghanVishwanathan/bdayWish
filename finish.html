@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>You Did It! — Treasure Hunt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true"></div>
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Adventure Progress</span>
+      <span class="progress-percent">100%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill"></div>
+    </div>
+  </div>
+
+  <main class="page has-progress">
+    <div class="card">
+      <h1 class="title">❤️ You found all your tiny friend! ❤️</h1>
+
+      <div class="finish-animals" aria-label="All five LEGO friends">
+        <span class="finish-animal">🦜</span>
+        <span class="finish-animal">🐢</span>
+        <span class="finish-animal">🐹</span>
+        <span class="finish-animal">🐱</span>
+        <span class="finish-animal">🐼</span>
+      </div>
+
+      <p class="finish-message">
+        I hope every clue made you smile and every little discovery made today even more special.<br /><br />
+        Thank you for playing this birthday adventure.<br /><br />
+        <strong>Happy Birthday Ms Rose! 🎂🎉</strong>
+      </p>
+
+      <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

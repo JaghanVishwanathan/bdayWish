@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Birthday Sarah!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Happy Birthday — Treasure Hunt</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="hearts-bg" aria-hidden="true"></div>
   <canvas id="confetti-canvas"></canvas>
 
-  <div class="container">
-    <h1 id="typing-text"></h1>
-    <button id="reveal-button" style="display:none;">Inga Press Panavum!</button>
-  </div>
+  <main class="page start-page">
+    <div class="card">
+      <p class="start-emoji">🎉 Happy Birthday ❤️</p>
+      <h1 class="title">Your Adventure Awaits</h1>
+      <p class="subtitle">
+        Today isn't just another birthday.<br /><br />
+        Somewhere around the house, few friends are waiting for you.<br /><br />
+        Each one knows where the next adventure begins.<br /><br />
+        Follow the clues carefully...<br /><br />
+        Good luck.
+      </p>
+      <button id="start-btn" class="btn btn-primary">Begin the Adventure</button>
+    </div>
+  </main>
 
-  <script src="confetti.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

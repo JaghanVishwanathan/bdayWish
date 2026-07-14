@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Clue 2 — Treasure Hunt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true"></div>
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Adventure Progress</span>
+      <span class="progress-percent">40%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill"></div>
+    </div>
+  </div>
+
+  <main class="page has-progress">
+    <div class="card">
+      <p id="story-text" class="story-text"></p>
+
+      <div id="clue-form" class="clue-form">
+        <p class="riddle-label">Riddle</p>
+        <p class="riddle-text">
+          Water visits me often,<br />
+          but now I remain perfectly dry.<br /><br />
+          I rest where splashes begin.
+        </p>
+        <div class="input-group">
+          <input
+            id="answer-input"
+            class="answer-input"
+            type="text"
+            placeholder="Your answer..."
+            autocomplete="off"
+            autocapitalize="off"
+          />
+        </div>
+        <p id="hint-error" class="hint-error"></p>
+        <button id="submit-btn" class="btn btn-primary">Check Answer</button>
+      </div>
+
+      <div id="reveal-section" class="reveal-section">
+        <p class="success-badge">✅ Correct!</p>
+        <div class="lego-reveal">
+          <span class="lego-emoji">🐢</span>
+        </div>
+        <button id="continue-btn" class="btn btn-primary">Continue</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    window.CLUE_CONFIG = {
+      clueNumber: 2,
+      progress: 40,
+      story:
+        "Your feathered friend pointed you toward someone much slower.\n\nThis traveler carries home everywhere it goes.",
+      answers: ["bathtub", "tub", "bath"],
+      nextPage: "clue3.html",
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
